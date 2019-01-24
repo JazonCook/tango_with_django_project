@@ -12,9 +12,8 @@ def index(request):
 	return render(request, 'rango/index.html', context_dict)
 
 def about(request):
-	context_dict = {'normalmessage': "Message from views.py!"}
 
-	return render(request, 'rango/about.html', context=context_dict)
+	return render(request, 'rango/about.html')
 	
 def show_category(request, category_name_slug):
 	context_dict = {}
