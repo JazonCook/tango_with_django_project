@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Rango</title>
-	</head>
-	
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Rango
+{% endblock %}
+
+{% block body_block %}
 	<body>
 		<h1>Add a Category</h1>
 		<div>
@@ -21,10 +23,6 @@
 			</form>
 		</div>
 		<br />
-		<div>
-			<a href="/rango/">Index</a>
-		</div>
 	</body>
-</html>
-
+{% endblock %}
 		

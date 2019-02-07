@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Rango
+{% endblock %}
+
+{% block body_block %}
 	<head>
 		<title>Rango</title>
 	</head>
@@ -25,10 +31,7 @@
 			{% endif %}
 		</div>
 		<br />
-		<div>
-			<a href="/rango/">Index</a>
-		</div>
 	</body>
-</html>
+{% endblock %}
 
 		
